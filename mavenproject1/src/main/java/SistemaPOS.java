@@ -1,4 +1,5 @@
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 /**
@@ -20,10 +21,20 @@ public class SistemaPOS {
         System.out.println("------- Lista De Productos------");
         for (Producto producto : productos) {
             System.out.println(producto.descripcionDetallada());
-            System.out.println("--------------------------------");
+            System.out.println("--------------------------------");         
 
         }
     }
     
-    
+    public final void imprimirBoleta(){
+        System.out.println("------------------- Bolate -------------------");
+        System.out.println("Fecha de venta: " + LocalDate.now());
+        int total = 0;
+        
+        for (Producto producto : productos )
+            System.out.println(producto.getNombre() + " - $" + producto.obtenerPrecioConIVA());
+        
+              
+        
+    }
 }

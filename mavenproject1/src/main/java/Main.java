@@ -26,6 +26,8 @@ public class Main {
         
         sistema.listarProductos();
         
+        sistema.imprimirBoleta();
+        
         }
        
     }

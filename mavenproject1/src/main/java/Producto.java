@@ -3,7 +3,7 @@
  *
  * @author httpp4t0
  */
-abstract class Producto {
+abstract class Producto implements CalculoIVA{
     private String nombre;
     private int preciosinIVA;
     
@@ -40,4 +40,8 @@ abstract class Producto {
     }
     
     public abstract String descripcionDetallada ();
+    
+    public int obtenerPrecioConIVA(){
+        return preciosinIVA + calcularIVA(preciosinIVA);
+    }
 }
