@@ -50,7 +50,7 @@ public class Telefono extends Producto {
 
     @Override
     public String descripcionDetallada() {
-        return "Telefono: " + super.getNombre() + super.getPreciosinIVA() + marca + modelo;
+        return "Telefono: " + super.getNombre() + "\nPrecio: " + super.getPreciosinIVA() + "\nMarca: " + marca + "\nModelo: " + modelo;
     }
     
 }
