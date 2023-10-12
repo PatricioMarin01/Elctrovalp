@@ -49,7 +49,8 @@ public class Computador extends Producto {
 
     @Override
     public String descripcionDetallada() {
-        String descripcion = "Computador: " + super.getNombre() + "\nPrecio: " + super.getPreciosinIVA() + "\nProcesador: " + procesador + "\nTipo: " + tipo;
+        int valorFinal = (int) (super.getPreciosinIVA()*1.15);
+        String descripcion = "Computador: " + super.getNombre() + "\nPrecio: " + valorFinal + "\nProcesador: " + procesador + "\nTipo: " + tipo;
         return descripcion;
     }
     
