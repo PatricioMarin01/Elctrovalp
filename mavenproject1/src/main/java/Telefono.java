@@ -10,6 +10,7 @@ public class Telefono extends Producto {
     
     //Constructor sin parametros
     public Telefono() {
+        super();
     }
     
     //Constructor parametros solo telefono
