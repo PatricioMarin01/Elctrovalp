@@ -49,7 +49,7 @@ public class Telefono extends Producto {
 
     @Override
     public String descripcionDetallada() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "Telefono: " + super.getNombre() + super.getPreciosinIVA() + marca + modelo;
     }
     
 }
